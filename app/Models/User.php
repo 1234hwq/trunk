@@ -11,18 +11,22 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-
+    // 用户模型关联表
+    public $table = 'blog_user_user';
+    // 关联表的主键
+    public $primaryKey = 'id';
     /**
      * The attributes that are mass assignable.
-     *
+     * 允许被批量操作的字段
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
+        'username',
         'password',
     ];
 
+    // 关闭时间戳
+    public $timestamps = false;
     /**
      * The attributes that should be hidden for serialization.
      *
