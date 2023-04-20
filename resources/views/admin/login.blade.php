@@ -12,7 +12,7 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
-    <link href="../admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{url('resources/views/admin/css/bootstrap.min.css')}}" rel="stylesheet">
     <!--Jasmine Stylesheet [ REQUIRED ]-->
     <link href="css/style.css" rel="stylesheet">
     <!--Font Awesome [ OPTIONAL ]-->
