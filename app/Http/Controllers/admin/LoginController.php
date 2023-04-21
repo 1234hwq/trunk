@@ -10,4 +10,6 @@ Class LoginController extends Controller
     {
         return view('admin.login');
     }
+
+
 }

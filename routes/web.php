@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\LoginController;
+use App\Http\Controllers\admin\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::get('/', function () {
 // 用户登录页面路由
 Route::get('admin/login', [LoginController::class, 'login']);
 
+// 获取验证码路由
+Route::get('admin/getCaptcha', [AuthController::class, 'getCaptcha']);
