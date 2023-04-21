@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/alan', function () {
+    return view('app');
+});
+
 // 用户登录页面路由
 Route::get('admin/login', [LoginController::class, 'login']);
 
